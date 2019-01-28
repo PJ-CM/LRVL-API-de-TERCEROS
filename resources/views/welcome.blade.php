@@ -3,8 +3,12 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>Laravel</title>
+        <title>Laravel :: Consumiendo una API de terceros</title>
+
+        {{-- Bootstrap y CSS principal --}}
+        <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
@@ -81,7 +85,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    Laravel :: Consumiendo una API de terceros
                 </div>
 
                 <div class="links">
@@ -94,5 +98,8 @@
                 </div>
             </div>
         </div>
+
+        {{-- jQuery, Bootstrap --}}
+        <script src="{{ asset('js/app.js') }}"></script>
     </body>
 </html>
