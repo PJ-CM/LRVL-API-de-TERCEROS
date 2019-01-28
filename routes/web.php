@@ -27,7 +27,11 @@ Route::get('/listado-directo', function () {
         // Base URI is used with relative requests
         'base_uri' => 'https://jsonplaceholder.typicode.com',
         // You can set any number of default request options.
-        'timeout'  => 2.0,
+        ////'timeout'  => 2.0,
+        //Para darle más tiempo límite
+        'timeout'  => 10.0,
+        //Para darle un tiempo límite infinito, poner a 0 o quitar la línea
+        ////'timeout'  => 0,
     ]);
 
     //Petición hacia recurso deseado
@@ -56,7 +60,11 @@ Route::get('/detalle-directo/{id}', function ($id) {
         // Base URI is used with relative requests
         'base_uri' => 'https://jsonplaceholder.typicode.com',
         // You can set any number of default request options.
-        'timeout'  => 2.0,
+        ////'timeout'  => 2.0,
+        //Para darle más tiempo límite
+        'timeout'  => 10.0,
+        //Para darle un tiempo límite infinito, poner a 0 o quitar la línea
+        ////'timeout'  => 0,
     ]);
 
     //Petición hacia recurso deseado - detalle según ID recibido
