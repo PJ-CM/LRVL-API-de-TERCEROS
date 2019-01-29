@@ -39,7 +39,7 @@
 
             <ul class="navbar-nav navbar-right ">
                 <li class="nav-item active">
-                    <a class="nav-link" href="http://localhost:6006/home" title="Ir a HOME">
+                    <a class="nav-link" href="#home" title="Ir a HOME">
                         <i class="fas fa-home"></i>
                         Home
                     </a>
@@ -51,14 +51,14 @@
                     </a>
 
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="http://localhost:6006/usuario/1" title="Ver tu perfil">Perfil</a>
-                        <a class="dropdown-item" href="http://localhost:6006/logout"
+                        <a class="dropdown-item" href="#usuario/1" title="Ver tu perfil">Perfil</a>
+                        <a class="dropdown-item" href="#logout"
                         onclick="event.preventDefault();
-                        document.getElementById('logout-form').submit();" title="Salir de la sesión">
+                        document.getElementById('_logout-form').submit();" title="Salir de la sesión">
                             Logout
                         </a>
 
-                        <form id="logout-form" action="http://localhost:6006/logout" method="POST" style="display: none;">
+                        <form id="logout-form" action="#logout" method="POST" style="display: none;">
                             <input type="hidden" name="_token" value="pJXsZOzYougUKGwEZk5arApqeodke3wEi4Bj5ZNN">
                         </form>
                     </div>
